@@ -10,6 +10,10 @@ $(function () {
   $('.top__slider').slick({
     dots: true,
     arrows: false,
-    fade: true
-  })
+    fade: true,
+    autoplay: true
+  });
+
+  var mixer = mixitup('.gallery__inner')
+
 })
