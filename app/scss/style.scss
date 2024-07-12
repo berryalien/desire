@@ -1027,6 +1027,7 @@
     font-size: 24px;
     line-height: 38px;
     text-align: center;
+    
   }
 
   &__blockquote-author {
@@ -1381,3 +1382,6 @@
     cursor: pointer;
   }
 }
+
+
+@import 'media';
