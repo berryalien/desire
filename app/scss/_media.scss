@@ -24,7 +24,13 @@
   }
 
   .header {
+    &__inner {
+      padding-top: 42px;
+      flex-wrap: wrap;
+    }
+
     &__btn-menu {
+      order: -1;
       display: block;
       background-color: transparent;
       border: none;
@@ -43,8 +49,30 @@
   }
 
   .menu {
+    padding-right: 0;
+    width: 100%;
+    background-color: #FFF;
+    position: relative;
+    z-index: 11;
+    text-align: center;
+    transform: translateY(-250px);
+    transition: all .5s;
+
+    &--open {
+      transform: translateY(30px);
+    }
+
     &__list {
-      display: none;
+      display: block;
+    }
+
+    &__list-item {
+      padding-right: 0;
+    }
+
+    &__list-link {
+      display: block;
+      padding: 10px 0;
     }
   }
 }
