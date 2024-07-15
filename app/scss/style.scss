@@ -4,7 +4,6 @@
 @import 'libs';
 @import 'global';
 
-
 .header {
   &__inner {
     display: flex;
@@ -17,6 +16,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+  }
+
+  &__btn-menu{
+    display: none;
   }
 }
 
@@ -93,7 +96,7 @@
 
   &__form-button {
     background-color: $title;
-    bottom: none;
+    border: none;
     color: #fffff0;
     border-radius: 21px;
     font-weight: 600;
@@ -188,7 +191,7 @@
   z-index: 20;
 
   &.rightside-menu--close {
-    transform: translateX(1000%);
+    transform: translateY(100%);
   }
 
   &__close {
@@ -1027,7 +1030,7 @@
     font-size: 24px;
     line-height: 38px;
     text-align: center;
-    
+
   }
 
   &__blockquote-author {
