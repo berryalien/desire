@@ -18,7 +18,7 @@
     cursor: pointer;
   }
 
-  &__btn-menu{
+  &__btn-menu {
     display: none;
   }
 }
@@ -188,10 +188,11 @@
   max-width: 694px;
   background-color: #FFFFFF;
   padding-top: 40px;
-  z-index: 20;
+  z-index: 13;
+  overflow-y: scroll;
 
   &.rightside-menu--close {
-    transform: translateY(100%);
+    transform: translateX(1000%);
   }
 
   &__close {
@@ -238,12 +239,17 @@
 
   &__list {
     display: flex;
+    overflow-x: auto;
+  }
+
+  &__item {
+    position: relative;
+    padding-right: 8px;
   }
 
   &__item::after {
     content: '/';
-    margin-left: -4px;
-    margin-right: 4px;
+    position: absolute;
   }
 
   &__item:last-child::after {
