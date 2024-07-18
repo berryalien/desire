@@ -605,7 +605,7 @@
   }
 
   &__items {
-    display: flex;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
   }
@@ -613,10 +613,6 @@
   &__img-link {
     margin-bottom: 19px;
     display: inline-block;
-  }
-
-  &__img {
-    max-width: 587px;
   }
 
   &__links {

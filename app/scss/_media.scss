@@ -199,6 +199,24 @@
       width: 100%;
     }
   }
+
+  .blog-box {
+    &__items {
+      display: block;
+    }
+
+    &__img-link {
+      display: block;
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media (max-width: 540px) {
@@ -279,12 +297,20 @@
   }
 
   .gallery {
-    &__items{
+    &__items {
       grid-template-columns: repeat(1, 1fr);
     }
-    &__item:first-child{
+
+    &__item:first-child {
       grid-column: 1;
       grid-row: 1;
+    }
+  }
+
+  .blog-box {
+    &__item-title {
+      font-size: 22px;
+      line-height: 38px;
     }
   }
 }
