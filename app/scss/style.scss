@@ -793,6 +793,10 @@
 .map {
   margin-top: -53px;
   margin-bottom: 50px;
+
+  iframe {
+    height: 578px;
+  }
 }
 
 .contact {
@@ -905,6 +909,8 @@
 
   &__link {
     position: relative;
+    max-width: 170px;
+    max-height: 170px;
 
     &:hover {
       .contact-slider__title {
@@ -928,7 +934,7 @@
     top: 0;
     bottom: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: rgba(#FFFFFF, .6);
     color: $title;
