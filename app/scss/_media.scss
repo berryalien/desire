@@ -174,8 +174,9 @@
 
     }
   }
-  .partners{
-    &__items{
+
+  .partners {
+    &__items {
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -310,6 +311,11 @@
 
   .collection {
     grid-template-columns: repeat(1, 1fr);
+
+    &__info-title {
+      font-size: 20px;
+      line-height: 22px;
+    }
   }
 
   %title-font {
@@ -332,6 +338,13 @@
     &__item:first-child {
       grid-column: 1;
       grid-row: 1;
+    }
+
+    &.gallery-page {
+      .gallery__item:nth-child(8) {
+        grid-column: 1;
+        grid-row: 1px;
+      }
     }
   }
 

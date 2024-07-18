@@ -362,6 +362,8 @@
 
   &__item {
     position: relative;
+    max-width: 350px;
+    max-height: 350px;
 
     &:hover {
       .collection__info {
@@ -371,7 +373,7 @@
   }
 
   &__images {
-    min-height: 350px;
+    max-height: 350px;
     object-fit: cover;
   }
 
